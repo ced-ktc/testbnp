@@ -2,11 +2,9 @@ package startApp;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.*;
-import sun.misc.ClassLoaderUtil;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -97,7 +95,7 @@ public class MainClass {
      * @param zoneTo
      * @return price
      */
-    private static int findPriceByZone(int zoneFrom, int zoneTo) {
+    public static int findPriceByZone(int zoneFrom, int zoneTo) {
         int price = 0;
         if (zoneFrom == 1 && zoneTo == 2) price = 240;
         else if (zoneFrom == 3 && zoneTo == 4) price = 200;
